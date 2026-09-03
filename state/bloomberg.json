@@ -10,5 +10,19 @@
     "title": "Cloud Site Reliability Engineer (SRE) - Data Management & Analytics Platform",
     "company": "Bloomberg",
     "location": "New York, NY"
+  },
+  {
+    "id": "https://bloomberg.avature.net/careers/JobDetail/Senior-Software-Engineer-Public-Cloud-Engineering/20217",
+    "title": "Senior Software Engineer - Public Cloud Engineering",
+    "company": "Bloomberg",
+    "location": "New York",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://bloomberg.avature.net/careers/JobDetail/Senior-ML-Platform-Engineer-Artificial-Intelligence/18255",
+    "title": "Senior ML Platform Engineer - Artificial Intelligence",
+    "company": "Bloomberg",
+    "location": "New York",
+    "posted_at": "unknown"
   }
 ]

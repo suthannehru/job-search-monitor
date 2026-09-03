@@ -46,5 +46,12 @@
     "title": "Kubernetes Site Reliability Engineer",
     "company": "Citadel",
     "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/site-reliability-engineer-senior-or-staff-infrastructure-security/8880864",
+    "title": "Site Reliability Engineer (Senior or Staff), Infrastructure Security",
+    "company": "MongoDB",
+    "location": "Remote/Hybrid - New York City, Austin, Seattle, or San Francisco",
+    "posted_at": "reposted one month ago"
   }
 ]

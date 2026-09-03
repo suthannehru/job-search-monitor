@@ -82,5 +82,19 @@
     "title": "Senior DevOps Engineer",
     "company": "Verana Health",
     "location": "New York City, NY (+ remote)"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/cribl/jobs/6109420004",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cribl",
+    "location": "Remote - United States",
+    "posted_at": "2026-07-08"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/gitlab/jobs/8623389002",
+    "title": "Site Reliability Engineer, Infrastructure Platforms — AMER (Intermediate to Senior Staff)",
+    "company": "GitLab",
+    "location": "Remote, US / Remote, Canada",
+    "posted_at": "2026-07-10"
   }
 ]
