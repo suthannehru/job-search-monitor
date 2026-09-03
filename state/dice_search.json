@@ -1,0 +1,26 @@
+[
+  {
+    "id": "https://www.dice.com/job-detail/c30c6658-c8b9-4560-bf57-b65027b577d6",
+    "title": "Senior Infrastructure Engineer",
+    "company": "Applecart",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.dice.com/job-detail/15ba65da-3c98-4f1a-90f1-f9de6e014d70",
+    "title": "Senior Cloud Site Reliability Engineer (SRE) - AWS",
+    "company": "SOFT Inc (staffing/client role)",
+    "location": "New York, NY (Hybrid)"
+  },
+  {
+    "id": "https://www.dice.com/job-detail/0a8a573d-7f4a-41d0-aa21-1270cf1db1c7",
+    "title": "Senior Site Reliability Engineer (Database / Data Systems)",
+    "company": "Lorvin Technologies (client role)",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.dice.com/job-detail/f7a09cba-aecc-474e-9211-3e390e35b096",
+    "title": "Infrastructure Engineer - VMware",
+    "company": "New Millennium Consulting (client role)",
+    "location": "New York, NY (Hybrid)"
+  }
+]

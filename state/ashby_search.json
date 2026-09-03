@@ -1,0 +1,74 @@
+[
+  {
+    "id": "https://jobs.ashbyhq.com/legora/c7a8d50e-c7f9-4a65-984d-dfa9239335e7",
+    "title": "Staff Site Reliability Engineer",
+    "company": "Legora",
+    "location": "New York, NY (new NYC engineering hub)"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/legora/04f2f382-7760-4f42-a7da-f85ae8de8a62",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Legora",
+    "location": "New York, NY (new NYC engineering hub)"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/scoreplay/42f1911f-68d4-4a9f-8d9e-e3a7939ceb96",
+    "title": "Senior Platform Engineer (SRE)",
+    "company": "ScorePlay",
+    "location": "New York, NY / Paris"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/wealth-com/0f560f43-5619-4a4f-9bb6-fcde8e633858",
+    "title": "Senior Software Engineer, DevOps",
+    "company": "Wealth.com",
+    "location": "New York, NY (hybrid)"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/WRITER/09fca4e9-ecdc-4061-b8ac-767f039db19e",
+    "title": "Infrastructure Engineer",
+    "company": "WRITER",
+    "location": "New York City, NY (hybrid)"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/propel/11265618-fbca-405c-b52f-a9b85ffe6aed",
+    "title": "Senior Platform Engineer",
+    "company": "Propel",
+    "location": "Brooklyn, NY HQ / Remote-first"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/avantos/4b2dc531-155c-4d8a-97b7-d89e27a59c12",
+    "title": "Senior Data and Platform Engineer",
+    "company": "Avantos AI",
+    "location": "New York, NY (hybrid) or US Remote"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/tempo-xyz/b7b4ef07-f664-472f-a268-445a05addd18",
+    "title": "Platform Engineer (Remote - USA)",
+    "company": "Tempo",
+    "location": "Remote, US"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/reflexai/7d1d3d3e-873a-4d50-bb53-fca2f436f770",
+    "title": "Senior Platform Engineer",
+    "company": "ReflexAI",
+    "location": "Remote, US"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/par%20technology/b83823c8-c142-4925-838e-8bd0882ba55e",
+    "title": "Senior DevOps Engineer",
+    "company": "PAR Technology",
+    "location": "Remote, US (incl. New York)"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/kalshi/3d255a5d-7b0c-4a92-bae1-1ddb040f733e",
+    "title": "Infrastructure Engineer",
+    "company": "Kalshi",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/kalshi/ab6fdd99-df25-44ae-b15d-3a9ca7807387",
+    "title": "Site Reliability Engineer",
+    "company": "Kalshi",
+    "location": "New York, NY"
+  }
+]

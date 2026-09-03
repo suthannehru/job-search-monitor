@@ -1,0 +1,50 @@
+[
+  {
+    "id": "https://www.builtinnyc.com/job/senior-platform-engineer/7407141",
+    "title": "Senior Platform Engineer",
+    "company": "The Farmer's Dog",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-devops-engineer/9113506",
+    "title": "Senior DevOps Engineer",
+    "company": "Social Discovery Group",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-infrastructure-engineer/4757721",
+    "title": "Senior / Staff Infrastructure Engineer",
+    "company": "Knot",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-infrastructure-engineer/4735287",
+    "title": "Senior Infrastructure Engineer",
+    "company": "Sotheby's",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-infrastructure-engineer/4358265",
+    "title": "Senior Infrastructure Software Engineer",
+    "company": "Ontra",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-build-engineer/6745363",
+    "title": "Senior Build Engineer",
+    "company": "Superblocks",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/senior-infrastructure-engineer/6239947",
+    "title": "Senior Infrastructure Engineer",
+    "company": "Upstart",
+    "location": "New York, NY"
+  },
+  {
+    "id": "https://www.builtinnyc.com/job/kubernetes-site-reliability-engineer/3630457",
+    "title": "Kubernetes Site Reliability Engineer",
+    "company": "Citadel",
+    "location": "New York, NY"
+  }
+]

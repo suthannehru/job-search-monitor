@@ -1,0 +1,50 @@
+[
+  {
+    "id": "https://jobs.lever.co/Regard/b4d9de4d-da32-4b4f-b78f-554cab777941",
+    "title": "DevOps Engineer",
+    "company": "Regard",
+    "location": "New York, NY / LA / SF"
+  },
+  {
+    "id": "https://jobs.lever.co/mistral/b320e972-3ed8-4d02-acb1-37950812cdbc",
+    "title": "Site Reliability Engineer",
+    "company": "Mistral AI",
+    "location": "New York City, NY"
+  },
+  {
+    "id": "https://jobs.lever.co/nextech/53a16674-3545-4aee-b9e2-205714e4ff21",
+    "title": "Staff Cloud Platform Engineer (Remote - US)",
+    "company": "Nextech",
+    "location": "Remote, US"
+  },
+  {
+    "id": "https://jobs.lever.co/nextech/eaa66a5e-e805-4d4a-bfd3-ca23036afda7",
+    "title": "Senior Cloud Platform Engineer (Remote - US)",
+    "company": "Nextech",
+    "location": "Remote, US"
+  },
+  {
+    "id": "https://jobs.lever.co/protective/37003352-508e-4d68-b100-117554aa2374",
+    "title": "Senior DevOps Platform Engineer (Remote)",
+    "company": "Protective",
+    "location": "Remote, US"
+  },
+  {
+    "id": "https://jobs.lever.co/gauntlet/56230d07-8402-4ed8-99d2-cc76391108fa",
+    "title": "Infrastructure Engineer",
+    "company": "Gauntlet",
+    "location": "New York, NY / Remote"
+  },
+  {
+    "id": "https://jobs.lever.co/genesistherapeutics/a31f8e69-3bf7-4c84-a723-5019e3b6b016",
+    "title": "Principal Infrastructure Engineer Lead",
+    "company": "Genesis Therapeutics",
+    "location": "New York, NY (hybrid)"
+  },
+  {
+    "id": "https://jobs.lever.co/aircall/a0b5380d-de63-440b-bdb8-204315d8b11b",
+    "title": "Infrastructure Engineer",
+    "company": "Aircall",
+    "location": "New York, NY"
+  }
+]

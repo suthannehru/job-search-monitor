@@ -1,0 +1,51 @@
+{
+  "note": "Working search query patterns discovered by the scout. WebFetch to individual ATS/board domains (greenhouse, lever, ashby, myworkdayjobs, linkedin, indeed, dice, builtinnyc, wellfound, google.com, metacareers.com, amazon.jobs, bloomberg.avature.net) was blocked by the sandbox egress proxy as of 2026-09-03 in this environment; WebSearch snippets were used instead. careers.twosigma.com, janestreet.com, citadel.com, and careers.datadoghq.com were reachable via WebFetch. Re-check egress access each run in case it changes.",
+  "last_run": "2026-09-03",
+  "ats_search_queries": [
+    "site:boards.greenhouse.io \"platform engineer\" new york",
+    "site:boards.greenhouse.io \"site reliability engineer\" new york",
+    "site:boards.greenhouse.io devops new york OR remote",
+    "site:boards.greenhouse.io \"build engineer\" OR \"CI/CD engineer\"",
+    "site:jobs.lever.co devops new york",
+    "site:jobs.lever.co \"platform engineer\" remote",
+    "site:jobs.lever.co \"senior site reliability engineer\"",
+    "site:jobs.lever.co \"infrastructure engineer\" new york",
+    "site:jobs.ashbyhq.com SRE new york",
+    "site:jobs.ashbyhq.com \"infrastructure engineer\"",
+    "site:jobs.ashbyhq.com \"platform engineer\" new york OR remote",
+    "site:myworkdayjobs.com \"infrastructure engineer\" new york",
+    "site:myworkdayjobs.com \"site reliability engineer\" new york",
+    "site:myworkdayjobs.com \"devops engineer\" new york senior"
+  ],
+  "job_board_search_queries": [
+    "\"senior devops engineer\" new york site:linkedin.com/jobs",
+    "\"platform engineer\" nyc site:linkedin.com/jobs",
+    "\"ci/cd engineer\" OR \"build engineer\" new york senior site:linkedin.com/jobs",
+    "\"senior site reliability engineer\" new york city site:linkedin.com/jobs",
+    "site:indeed.com \"site reliability engineer\" new york",
+    "site:indeed.com \"platform engineer\" new york senior $200,000",
+    "site:indeed.com \"infrastructure engineer\" new york senior -intern",
+    "site:builtinnyc.com devops OR \"platform engineer\" OR SRE senior",
+    "site:builtinnyc.com \"infrastructure engineer\" OR \"build engineer\" senior",
+    "site:wellfound.com \"site reliability engineer\" OR \"platform engineer\"",
+    "site:dice.com \"infrastructure engineer\" new york",
+    "site:dice.com \"site reliability engineer\" new york senior",
+    "site:ziprecruiter.com \"site reliability engineer\" new york senior",
+    "\"site reliability engineer\" remote $200k"
+  ],
+  "named_company_notes": {
+    "waymo": "SRE/infra roles found are in Mountain View/SF/Warsaw, not NYC or remote-US. Recheck periodically.",
+    "zoox": "SRE/platform roles found are in Foster City/San Mateo, CA. No NYC/remote seen.",
+    "aurora": "Reliability/platform infra roles found are in Mountain View, CA. No NYC/remote seen.",
+    "rivian": "DevOps/SRE roles found in Seattle, Irvine, Vancouver. No NYC/US-remote seen.",
+    "applied_intuition": "Platform/DevOps roles found in Mountain View/DC, in-office 5 days/week. No NYC/remote seen.",
+    "jane_street": "No DevOps/SRE titling; uses Network/Systems/Data Center Engineer titles for infra roles, all NYC-based.",
+    "two_sigma": "Uses 'Reliability Engineer' title (SRE-equivalent) across many teams, all NYC-based.",
+    "citadel": "Uses 'Site Reliability Engineer' title directly, NYC-based. Citadel Securities is a separate entity, not covered here.",
+    "google": "reachable only via WebSearch this run (google.com WebFetch blocked); careers site direct search would be better if unblocked.",
+    "meta": "Meta's SRE-equivalent title is 'Production Engineer'.",
+    "amazon": "amazon.jobs SRE listings mostly don't state NYC/remote; filter carefully.",
+    "bloomberg": "bloomberg.avature.net reachable via WebSearch snippets; site itself blocked from direct fetch this run.",
+    "datadog": "careers.datadoghq.com was directly WebFetch-reachable this run; prefer direct fetch + site search over generic WebSearch."
+  }
+}
