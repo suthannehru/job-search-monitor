@@ -1,5 +1,6 @@
 {
-  "note": "Working search query patterns discovered by the scout. WebFetch to individual ATS/board domains (greenhouse, lever, ashby, myworkdayjobs, linkedin, indeed, dice, builtinnyc, wellfound, google.com, metacareers.com, amazon.jobs, bloomberg.avature.net) was blocked by the sandbox egress proxy as of 2026-09-03 in this environment; WebSearch snippets were used instead. careers.twosigma.com, janestreet.com, citadel.com, and careers.datadoghq.com were reachable via WebFetch. Re-check egress access each run in case it changes.",
+  "note": "Working search query patterns discovered by the scout. WebFetch to individual ATS/board domains was blocked by the sandbox egress proxy on 2026-09-03; as of 2026-09-03 (later run same day) WebFetch to careers.google.com, bloomberg.avature.net, and job-boards.greenhouse.io worked directly (200s via curl too), but LinkedIn job-view pages, Workday SPA shells (myworkdayjobs.com), and janestreet.com/careers.twosigma.com sometimes block or fail to render for WebFetch even though curl gets HTTP 200 (JS-rendered content, or bot-detection redirect to a generic search page). Re-check egress/fetchability each run.",
+  "CRITICAL_LESSON_2026-09-03b": "WebSearch result snippets/AI summaries are frequently WRONG or STALE: one run found a WebSearch summary claiming 'NYC' for a job whose actual page said 'Remote (Argentina)', and another claiming 'NYC option' for a job whose actual page said 'Toronto'. Separately, of 20 Greenhouse/Lever/Ashby/Wellfound/Dice URLs surfaced by WebSearch in one sweep, 16 were already-expired/removed postings (404, or a 302 redirect to the org's board root with ?error=true, or Ashby's embedded JSON showing posting:null) despite WebSearch presenting them as current results. ALWAYS WebFetch (or curl for a plain HTTP-status sanity check when WebFetch is blocked/renders nothing) each candidate URL before adding it to state / notifying on it, to confirm: (a) the posting still resolves live (not 404/redirect-to-error/posting:null), and (b) the actual title/location/seniority match, not just the search snippet's paraphrase. Do not trust an AI-generated WebSearch summary's location or seniority claims at face value. For Workday SPA shells that return 200 but render no content even via WebFetch, a plain curl HTTP status check (200 vs 404/500) is a reasonable fallback sanity check (X/Twitter's Workday job returned HTTP 500 this run and was excluded); still treat the URL's own auto-generated slug (title/location embedded in the path, e.g. .../New-York-NY/... or .../US-NY-Remote/...) as a reasonably reliable structured signal since ATS platforms generate slugs from the actual posting fields, not from an LLM paraphrase.",
   "last_run": "2026-09-03",
   "ats_search_queries": [
     "site:boards.greenhouse.io \"platform engineer\" new york",
@@ -15,7 +16,13 @@
     "site:jobs.ashbyhq.com \"platform engineer\" new york OR remote",
     "site:myworkdayjobs.com \"infrastructure engineer\" new york",
     "site:myworkdayjobs.com \"site reliability engineer\" new york",
-    "site:myworkdayjobs.com \"devops engineer\" new york senior"
+    "site:myworkdayjobs.com \"devops engineer\" new york senior",
+    "site:boards.greenhouse.io OR site:job-boards.greenhouse.io \"site reliability engineer\" new york senior",
+    "site:boards.greenhouse.io OR site:job-boards.greenhouse.io \"infrastructure engineer\" new york OR remote senior",
+    "site:jobs.lever.co \"platform engineer\" new york senior",
+    "site:jobs.lever.co \"site reliability engineer\" remote",
+    "site:jobs.ashbyhq.com \"devops engineer\" OR \"build engineer\" new york",
+    "site:myworkdayjobs.com \"platform engineer\" new york senior"
   ],
   "job_board_search_queries": [
     "\"senior devops engineer\" new york site:linkedin.com/jobs",
@@ -31,21 +38,26 @@
     "site:dice.com \"infrastructure engineer\" new york",
     "site:dice.com \"site reliability engineer\" new york senior",
     "site:ziprecruiter.com \"site reliability engineer\" new york senior",
-    "\"site reliability engineer\" remote $200k"
+    "\"site reliability engineer\" remote $200k",
+    "site:builtinnyc.com \"senior\" devops OR sre OR \"platform engineer\" jobs",
+    "site:wellfound.com \"devops engineer\" OR \"infrastructure engineer\" new york senior",
+    "site:dice.com \"platform engineer\" OR \"devops engineer\" new york senior $200",
+    "site:linkedin.com/jobs \"infrastructure engineer\" new york senior",
+    "\"senior site reliability engineer\" new york OR remote hiring 2026"
   ],
   "named_company_notes": {
     "waymo": "SRE/infra roles found are in Mountain View/SF/Warsaw, not NYC or remote-US. Recheck periodically.",
     "zoox": "SRE/platform roles found are in Foster City/San Mateo, CA. No NYC/remote seen.",
     "aurora": "Reliability/platform infra roles found are in Mountain View, CA. No NYC/remote seen.",
     "rivian": "DevOps/SRE roles found in Seattle, Irvine, Vancouver. No NYC/US-remote seen.",
-    "applied_intuition": "Platform/DevOps roles found in Mountain View/DC, in-office 5 days/week. No NYC/remote seen.",
-    "jane_street": "No DevOps/SRE titling; uses Network/Systems/Data Center Engineer titles for infra roles, all NYC-based.",
-    "two_sigma": "Uses 'Reliability Engineer' title (SRE-equivalent) across many teams, all NYC-based.",
+    "applied_intuition": "In-office 5 days/week (Mountain View/DC/etc). No NYC/remote seen. Mostly new-grad postings surfaced this run.",
+    "jane_street": "No DevOps/SRE titling; uses Network/Systems/Data Center/Linux Engineer titles for infra roles, all NYC-based. Caution: their 'Linux Engineer' posting explicitly welcomes less-experienced candidates ('we don't expect you to come in with deep experience') despite no junior/associate qualifier in the title - verify seniority from the JD body, not just the title, for this company.",
+    "two_sigma": "Uses 'Reliability Engineer' title (SRE-equivalent) across many teams, all NYC-based. Also uses 'Systems Engineer' for some platform-reliability-team roles. WebSearch surfaced several stale/removed (404) JobDetail URLs this run - verify liveness before trusting a cached result.",
     "citadel": "Uses 'Site Reliability Engineer' title directly, NYC-based. Citadel Securities is a separate entity, not covered here.",
-    "google": "reachable only via WebSearch this run (google.com WebFetch blocked); careers site direct search would be better if unblocked.",
-    "meta": "Meta's SRE-equivalent title is 'Production Engineer'.",
-    "amazon": "amazon.jobs SRE listings mostly don't state NYC/remote; filter carefully.",
-    "bloomberg": "bloomberg.avature.net reachable via WebSearch snippets; site itself blocked from direct fetch this run.",
-    "datadog": "careers.datadoghq.com was directly WebFetch-reachable this run; prefer direct fetch + site search over generic WebSearch."
+    "google": "careers.google.com job detail pages are WebFetch-reachable (200) but content can be truncated/incomplete in the fetch; cross-check location against the original search snippet when the fetch doesn't show it.",
+    "meta": "Meta's SRE-equivalent title is 'Production Engineer'. Search results this run were dominated by University Grad postings - filter those out.",
+    "amazon": "amazon.jobs SRE listings mostly don't state NYC/remote; filter carefully. WebSearch returned only aggregator noise (no direct amazon.jobs URLs) this run - try a site:amazon.jobs query next time.",
+    "bloomberg": "bloomberg.avature.net is WebFetch-reachable (200) this run. Several JobDetail IDs surfaced by WebSearch were 404/stale though - verify liveness before adding.",
+    "datadog": "careers.datadoghq.com listing/search page didn't show individual postings via WebFetch this run (needs the filtered/JS-rendered results). Site's SRE/Platform/Infra-titled roles (vs. generic 'Software Engineer, Infrastructure R&D' etc.) haven't been found yet - try more specific site: queries or the greenhouse-hosted job detail pages directly next time."
   }
 }

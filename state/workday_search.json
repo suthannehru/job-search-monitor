@@ -58,5 +58,47 @@
     "title": "Staff DevOps Engineer",
     "company": "Wonder",
     "location": "New York, NY"
+  },
+  {
+    "id": "https://capitalone.wd12.myworkdayjobs.com/en-US/Capital_One/job/Senior-Platform-Engineer_R244101-1",
+    "title": "Senior Platform Engineer",
+    "company": "Capital One",
+    "location": "New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://luminegrp.wd3.myworkdayjobs.com/WideOrbit/job/Remote-New-York-United-States/Senior-Platform-Engineer_JR106227",
+    "title": "Senior Platform Engineer",
+    "company": "WideOrbit",
+    "location": "Remote / New York, United States",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://blackrock.wd1.myworkdayjobs.com/blackrock_professional/job/New-York-NY/Vice-President--Platform-Engineer---Senior-Engineer-II_R260232",
+    "title": "VP, Platform Engineer / Senior Engineer II",
+    "company": "BlackRock",
+    "location": "New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-NY-Remote/Senior-Platform-Engineer_JR2007802-1",
+    "title": "Senior Platform Engineer",
+    "company": "NVIDIA",
+    "location": "US-NY-Remote",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://ms.wd5.myworkdayjobs.com/External/job/New-York-New-York-United-States-of-America/Senior-Cloud-Engineer--AWS---Azure---GCP----VP_PT-JR035887",
+    "title": "Senior Cloud Engineer (AWS/Azure/GCP), VP",
+    "company": "Morgan Stanley",
+    "location": "New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://blackstone.wd1.myworkdayjobs.com/en-US/BX_External_Site/job/New-York/Senior-Cloud-Platform-Engineer--VP---Cloud-and-Platform-Engineering_25937-2",
+    "title": "Senior Cloud Platform Engineer, VP",
+    "company": "Blackstone",
+    "location": "New York, NY",
+    "posted_at": "unknown"
   }
 ]
