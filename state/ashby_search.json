@@ -98,5 +98,26 @@
     "company": "CertifyOS",
     "location": "Remote US",
     "posted_at": "2026-06-17"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/avantos/213cd22e-8cda-4432-bd74-80a1c29ab047",
+    "title": "Senior DevOps Engineer",
+    "company": "Avantos AI",
+    "location": "Remote (NYC hybrid option)",
+    "posted_at": "2026-07-27"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/merciv/5c99f130-fe72-4927-af6a-2471c75a45e8",
+    "title": "Senior DevOps Engineer, Platform Infrastructure",
+    "company": "Merciv",
+    "location": "New York City, NY",
+    "posted_at": "2025-08-27"
+  },
+  {
+    "id": "https://jobs.ashbyhq.com/makai-labs/d563ac6e-31b0-4fb9-967b-f6cda3660034",
+    "title": "Senior Azure Platform / DevOps Engineer",
+    "company": "Makai Labs",
+    "location": "Remote (incl. New York)",
+    "posted_at": "2026-07-07"
   }
 ]
