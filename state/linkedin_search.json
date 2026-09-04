@@ -71,5 +71,19 @@
     "title": "Senior Site Reliability Engineer",
     "company": "CyberCoders (client role)",
     "location": "New York, NY"
+  },
+  {
+    "id": "https://www.linkedin.com/jobs/view/senior-platform-engineer-at-moonpay-4395308193",
+    "title": "Senior Platform Engineer",
+    "company": "MoonPay",
+    "location": "New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://www.linkedin.com/jobs/view/senior-platform-engineer-at-hinge-3953818809",
+    "title": "Senior Platform Engineer",
+    "company": "Hinge",
+    "location": "New York, NY",
+    "posted_at": "unknown"
   }
 ]

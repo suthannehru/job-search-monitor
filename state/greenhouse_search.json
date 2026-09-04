@@ -96,5 +96,42 @@
     "company": "GitLab",
     "location": "Remote, US / Remote, Canada",
     "posted_at": "2026-07-10"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/clearstreet/jobs/8089770",
+    "title": "Senior Software Engineer - Platform Engineer",
+    "company": "Clear Street",
+    "location": "New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/translucent/jobs/4260194009",
+    "title": "Senior Platform Engineer",
+    "company": "Translucent",
+    "location": "Union Square, New York, NY",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/edo/jobs/5132798007",
+    "title": "Senior Platform Engineer",
+    "company": "EDO",
+    "location": "New York, NY / Remote US",
+    "posted_at": "unknown"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8390699002",
+    "title": "DevOps Engineer - Senior Vice President",
+    "company": "iCapital",
+    "location": "New York, NY",
+    "posted_at": "unknown",
+    "comp": "$180,000 - $230,000"
+  },
+  {
+    "id": "https://job-boards.greenhouse.io/gemini/jobs/8099895",
+    "title": "Senior Data Platform Engineer",
+    "company": "Gemini",
+    "location": "New York, NY / Miami, FL / Remote US",
+    "posted_at": "unknown",
+    "comp": "$126,000 - $180,000"
   }
 ]
